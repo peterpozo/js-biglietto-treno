@@ -9,12 +9,12 @@ const distance = parseFloat (prompt("Benvenuto su TrainTicket, inserire la dista
 let prince = parseFloat (distance * 0.21).toFixed(2);
 console.log ("Il prezzo del biglietto è:", prince ,"€");
 const age = parseInt (prompt("Inserire l'età."));
-if (age < 18) {
+if (age <= 18) {
     let newprince = parseFloat (prince * 0.80).toFixed(2);
     console.log("I passegeri under 18 hanno diritto a uno sconto del 20%. Il prezzo del biglietto è:", newprince,"€");
 }
 
-else if (age>65){
+else if (age >= 65){
     let newprince = (prince * .60);
     console.log("I passeggeri over 65 hanno diritto ad uno sconto del 40%. Il prezzo del biglietto è:", newprince,"€");
 }
